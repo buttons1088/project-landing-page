@@ -1,3 +1,5 @@
+/* style rules for the header section */
+
 header {
     color: white;
     display: flex;
@@ -8,10 +10,11 @@ header {
 }
 
 a {
-    color:white;
+    color: white;
 }
 
 .header-links {
+    font-size: 18px;
     margin-right:100px;
     display:flex;
     gap: 30px;
@@ -20,3 +23,60 @@ a {
 .site-logo {
     margin-left:100px;
 }
+
+/* style rules for the hero section */
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #1F2937;
+    color: white;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.hero-text h1, .hero-text p {
+    margin: 0; /* Remove margin */
+    margin-bottom: 10px; /* Add a small margin at the bottom for spacing */
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight:bolder;
+}
+
+.hero-text p {
+    font-size:18px
+}
+
+.hero-button, .call-to-action {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: auto; /* Ensure the button width fits its content */
+    align-self: flex-start; /* Aligns the button to the left */
+    margin-top: 10px; /* Add some space between the paragraph and the button */
+}
+
+.hero-section img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    margin-left: 80px;
+}
+
+
+/* style rules for the hero section */
