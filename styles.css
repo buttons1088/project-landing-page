@@ -89,6 +89,7 @@ a {
     justify-content: center;
     margin:auto;
     text-align:center;
+    padding:30px;
 }
 
 .middle-section h2 {
@@ -120,3 +121,29 @@ figcaption {
     text-align: center;
 }
 
+/* Style for Caption Section */
+.quote-section {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin:auto;
+    padding: 50px;
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    max-width: 600px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color:#1f2937;
+}
+
+#quote {
+    text-align: right;
+    margin-left:auto;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+/*Call to Action Styles*/
