@@ -80,3 +80,43 @@ a {
 
 
 /* style rules for the hero section */
+
+.middle-section {
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;
+    margin:auto;
+    text-align:center;
+}
+
+.middle-section h2 {
+    font-size:36px;
+}
+
+.gallery {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+figure {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin:0;
+}
+
+figure img {
+    max-width: 100%;
+    height:auto;
+}
+
+figcaption {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
