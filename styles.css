@@ -1,0 +1,22 @@
+header {
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #1F2937;
+}
+
+a {
+    color:white;
+}
+
+.header-links {
+    margin-right:100px;
+    display:flex;
+    gap: 30px;
+}
+
+.site-logo {
+    margin-left:100px;
+}
