@@ -1,3 +1,10 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1F2937; /* Set background color for the entire page */
+}
+
 /* style rules for the header section */
 
 header {
@@ -6,7 +13,7 @@ header {
     justify-content:space-between;
     width: 100%;
     align-items: center;
-    background-color: #1F2937;
+    
 }
 
 a {
@@ -24,8 +31,7 @@ a {
     margin-left:100px;
 }
 
-/* style rules for the hero section */
-
+/* Hero Section Styles */
 .hero-section {
     display: flex;
     justify-content: space-around;
@@ -33,86 +39,90 @@ a {
     padding: 20px;
     background-color: #1F2937;
     color: white;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    margin-left: 100px;
-    margin-top: 40px;
-}
-
-.hero-text h1, .hero-text p {
-    margin: 0; /* Remove margin */
-    margin-bottom: 10px; /* Add a small margin at the bottom for spacing */
+    flex: 1; /* Ensures hero text takes up available space */
+    text-align: left; /* Centers text horizontally */
+    max-width: 600px; /* Limit text width for better readability */
+    margin-left: 20px; /* Adjusted margin for spacing */
 }
 
 .hero-text h1 {
     font-size: 48px;
-    font-weight:bolder;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .hero-text p {
-    font-size:18px
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.hero-button, .call-to-action {
+.hero-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #3882f6;
-    color: #fff;
+    color: white;
     border-radius: 5px;
-    text-align: center;
     text-decoration: none;
-    width: auto; /* Ensure the button width fits its content */
-    align-self: flex-start; /* Aligns the button to the left */
-    margin-top: 10px; /* Add some space between the paragraph and the button */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #3072d2;
 }
 
 .hero-section img {
-    flex: 1;
     max-width: 100%;
     height: auto;
-    margin-left: 80px;
+    margin-left: 20px;
 }
 
 
-/* style rules for the hero section */
+/* style rules for the middle section */
+
+#middle-wrapper {
+    background-color: white; /* Set background color for the wrapper around .middle-section */
+    padding: 20px;
+}
 
 .middle-section {
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     max-width: 600px;
     justify-content: center;
-    margin:auto;
-    text-align:center;
-    padding:30px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    background-color: inherit; /* Inherit background color from parent (#middle-wrapper) */
 }
 
 .middle-section h2 {
-    font-size:36px;
+    font-size: 36px;
 }
 
 .gallery {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
 
 figure {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin:0;
+    margin: 0;
 }
 
 figure img {
     max-width: 100%;
-    height:auto;
+    height: auto;
 }
 
 figcaption {
@@ -121,14 +131,17 @@ figcaption {
     text-align: center;
 }
 
-/* Style for Caption Section */
+/* Style for Quote Section */
 .quote-section {
-    display:flex;
+    display: flex;
     align-items: center;
-    flex-direction: column;
-    margin:auto;
+    justify-content: center; /* Center content horizontally */
     padding: 50px;
     background-color: #E5E7EB;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    width: 100vw; /* Full width of the viewport */
+    margin-left: calc(50% - 50vw); /* Center the section on the page */
+    margin-right: calc(50% - 50vw); /* Center the section on the page */
 }
 
 .quote-text {
@@ -136,14 +149,63 @@ figcaption {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
-    color:#1f2937;
+    color: #1f2937;
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Optional: Add bottom margin for spacing */
 }
 
 #quote {
-    text-align: right;
-    margin-left:auto;
     font-size: 18px;
+    text-align: right;
     margin-right: 20px;
+    margin-top: 20px; /* Optional: Add top margin for spacing */
 }
 
-/*Call to Action Styles*/
+.call-to-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px; /* Add padding inside the box for spacing */
+    background-color: #3882f6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white; /* Ensure text is readable */
+}
+
+.cta-text {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3882f6;
+    color: white; /* Ensure button text is readable */
+}
+
+/*footer styles*/
+
+footer {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding: 20px; /* Add padding around the footer */
+    background-color: #1F2937; /* Background color */
+    color: white; /* Text color */
+    font-size: 14px; /* Font size */
+    width: 100vw; /* Full width of the viewport */
+    margin-left: calc(50% - 50vw); /* Center the section on the page */
+    margin-right: calc(50% - 50vw); /* Center the section on the page */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
